@@ -39,21 +39,21 @@ This project presents an innovative solar-powered weather monitoring system desi
 ## 🛠️ System Architecture
 
 ```
-┌─────────────────┐    ┌──────────────┐    ┌─────────────┐
-│   Solar Panel   │───▶│    Charge    │───▶│   Battery   │
-└─────────────────┘    │  Controller  │    └─────────────┘
-                       └──────────────┘           │
-                                                  ▼
-┌─────────────────┐    ┌──────────────────────────────────┐
+┌─────────────────┐     ┌──────────────┐     ┌─────────────┐
+│   Solar Panel   │───▶│    Charge     │───▶│   Battery   │
+└─────────────────┘     │  Controller  │     └─────────────┘
+                        └──────────────┘           │
+                                                   ▼
+┌─────────────────┐     ┌──────────────────────────────────┐
 │    Sensors      │───▶│       Microcontroller            │
-│ • Temperature   │    │      (Arduino/ESP32)             │
-│ • Light (LDR)   │    └─────────────┬────────────────────┘
-│ • Gas (MQ-135)  │                  │
-│ • Touch         │                  ▼
+│ • Temperature   │     │      (Arduino/ESP32)             │
+│ • Light (LDR)   │     └─────────────┬────────────────────┘
+│ • Gas (MQ-135)  │                   │
+│ • Touch         │                   ▼
 └─────────────────┘         ┌─────────────────┐
-                           │   16x2 LCD      │
-                           │    Display      │
-                           └─────────────────┘
+                            │   16x2 LCD      │
+                            │    Display      │
+                            └─────────────────┘
 ```
 
 ## 📈 Performance Specifications
@@ -108,25 +108,6 @@ Modify the following parameters in the code as needed:
 #define GAS_SENSOR_PIN A1
 #define TOUCH_SENSOR_PIN 3
 #define LCD_INTERVAL 5000  // Display refresh interval (ms)
-```
-
-## 📁 Project Structure
-
-```
-solar-weather-monitoring/
-├── src/
-│   ├── main.ino              # Main Arduino sketch
-│   ├── sensors.h             # Sensor functions
-│   └── display.h             # LCD display functions
-├── docs/
-│   ├── circuit-diagram.png   # Wiring diagram
-│   ├── assembly-guide.md     # Hardware assembly instructions
-│   └── research-paper.pdf    # Complete project documentation
-├── images/
-│   ├── system-overview.jpg
-│   └── deployment-photos/
-├── README.md
-└── LICENSE
 ```
 
 ## 🌍 Applications
@@ -184,8 +165,8 @@ We welcome contributions! Please see our contributing guidelines:
 ## 👥 Authors
 
 - **Vinay Kokkisa** - *Project Lead* - SR University
-- **Shashivadhan Cheepiri** - *Hardware Design* - SR University  
-- **Gadipelli Vishnu Vardhan** - *Software Development* - SR University
+- **Shashivadhan Cheepiri** - *Software Development* - SR University  
+- **Gadipelli Vishnu Vardhan** - *Hardware Design* - SR University
 - **Bashaboina Rahul Thrinethra** - *System Integration* - SR University
 - **Kailasakoti Rahul** - *Testing & Validation* - SR University
 
@@ -202,7 +183,7 @@ This project is based on extensive research in solar-powered environmental monit
 If you encounter any issues or have questions:
 - 🐛 **Bug Reports**: Open an issue with detailed description
 - 💡 **Feature Requests**: Suggest new features via issues
-- 📧 **Contact**: [2303a51l66@sru.edu.in](mailto:2303a51l66@sru.edu.in)
+- 📧 **Contact**: [2303a51l82@sru.edu.in](mailto:2303a51l82@sru.edu.in)
 
 ## 🌟 Acknowledgments
 
